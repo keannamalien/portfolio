@@ -1,0 +1,1 @@
+export const restBase = 'https://keannabayaua.com/test-portfolio/wp-json/wp/v2/'
