@@ -4,7 +4,7 @@ import Loading from '../utilities/Loading'
 import { restBase } from '../utilities/Utilities'
 import { Link } from 'react-router-dom'
 
-const Footer = () => {
+const About = () => {
     const restPath = restBase + ''
     const [restData, setData] = useState([])
     const [isLoaded, setLoadStatus] = useState(false)
@@ -26,16 +26,14 @@ const Footer = () => {
         <>
             {isLoaded ?
                 <>
-                    {/* <footer>
-                        <section id="contact">
-                            <h2>Where You Can Find Me</h2>
-                            <ul>
-                                <li><Link to={restData.acf.github}>GitHub</Link></li>
-                                <li><Link to={restData.acf.linkedin}>LinkedIn</Link></li>
-                                <li><a href={`mailto:${restData.acf.email}`}>Email</a></li>
-                            </ul>
-                        </section>
-                    </footer> */}
+                    <section id="about">
+                        <h2>About</h2>
+                        <img src={restData.acf.about_image.url} alt="About Keanna" />
+                        <article>
+                            <h3>{restData.acf.about_title}</h3>
+                            <p>{restData.acf.about_text}</p>
+                        </article>
+                    </section>
                 </>
                 :
                 <Loading />
@@ -44,4 +42,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default About
