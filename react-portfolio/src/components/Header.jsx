@@ -36,12 +36,20 @@ const Header = () => {
                                 <li><Link to="/#contact">Contact</Link></li>
                             </ul>
                         </nav>
-                        <section>
-                            <h1>{restData.acf.name}</h1>
-                            <p>{restData.acf.title}</p>
-                            <div>
-                                <p>{restData.acf.tagline}</p>
-                                <p>{restData.acf.tagline_2}</p>
+                        <section className='title-container'>
+                            <div className='header-title'>
+                                <h1>{restData.acf.name}</h1>
+                                <p>{restData.acf.title}</p>
+                            </div>
+                            <div className='separator'>
+                            </div>
+                            <div className='tagline'>
+                                <span className='bracket'>{'{'}</span>
+                                <div className='tagline-text'>
+                                    <p className='line-1'>{restData.acf.tagline}</p>
+                                    <p className='line-2'>{restData.acf.tagline_2}</p>
+                                </div>
+                                <span className='bracket'>{'}'}</span>
                             </div>
                         </section>
                     </header>
