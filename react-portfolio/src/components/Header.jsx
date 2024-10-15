@@ -28,7 +28,7 @@ const Header = () => {
         <>
             {isLoaded ?
                 <>
-                    <header>
+                    <header id="top">
                         <nav>
                             <ul>
                                 <li><Link to="/#works">Works</Link></li>
@@ -51,6 +51,11 @@ const Header = () => {
                                 </div>
                                 <span className='bracket'>{'}'}</span>
                             </div>
+
+                            <Link to='#' className='see-my-works'>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ArrowDownLeft"><path d="M6 18L18 6" /><path d="M6 8v10h10" /></svg>
+                                <span className='see-my-works-text'>{restData.acf.see_my_works}</span>
+                            </Link>
                         </section>
                     </header>
                 </>

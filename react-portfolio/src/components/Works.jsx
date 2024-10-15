@@ -5,7 +5,7 @@ import { restBase } from '../utilities/Utilities'
 import { Link } from 'react-router-dom'
 
 const Works = () => {
-    const restPath = restBase + 'posts?acf_format=standard'
+    const restPath = restBase + 'posts?acf_format=standard&order=asc'
     const [restData, setData] = useState([])
     const [isLoaded, setLoadStatus] = useState(false)
 
@@ -29,23 +29,26 @@ const Works = () => {
         <>
             {isLoaded ?
                 <>
-                    {/* Works Section */}
-                    <section id="works">
+                    <section id="works" className='works-section'>
                         <h2>Works</h2>
+                        <div className='separator works'>
+                        </div>
                         <div className="work-gallery">
                             {/* loop through all posts */}
                             {restData.map(post =>
-                                <article key={post.id} className="work-item">
-                                    <Link>
-                                        <img src={post.acf.work_image.url} alt={post.acf.work_image.alt} />
-                                        <h3>{post.title.rendered}</h3>
-                                        {/* <p className="tools-used">
+                                <li>
+                                    <article key={post.id} className="work-item">
+                                        <Link>
+                                            <img src={post.acf.work_image.url} alt={post.acf.work_image.alt} />
+                                            <h3>{post.title.rendered}</h3>
+                                            {/* <p className="tools-used">
                                     <span>React</span> |
                                     <span>Adobe XD</span> |
                                     <span>Photoshop</span>
                                 </p> */}
-                                    </Link>
-                                </article>
+                                        </Link>
+                                    </article>
+                                </li>
                             )}
                         </div>
                         <p>You can also check out my <Link to="#">architectural work</Link>.</p>
