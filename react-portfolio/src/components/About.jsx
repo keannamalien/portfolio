@@ -5,7 +5,7 @@ import { restBase } from '../utilities/Utilities'
 import { Link } from 'react-router-dom'
 
 const About = () => {
-    const restPath = restBase + ''
+    const restPath = restBase + 'pages/8?acf_format=standard'
     const [restData, setData] = useState([])
     const [isLoaded, setLoadStatus] = useState(false)
 
@@ -26,8 +26,10 @@ const About = () => {
         <>
             {isLoaded ?
                 <>
-                    <section id="about">
+                    <section id="about" className='about-section'>
                         <h2>About</h2>
+                        <div className='separator about'>
+                        </div>
                         <img src={restData.acf.about_image.url} alt="About Keanna" />
                         <article>
                             <h3>{restData.acf.about_title}</h3>
