@@ -33,7 +33,7 @@ const Works = () => {
                         <h2>Works</h2>
                         <div className='separator works'>
                         </div>
-                        <div className="work-gallery">
+                        <ol className="work-gallery">
                             {/* loop through all posts */}
                             {restData.map(post =>
                                 <li>
@@ -41,17 +41,22 @@ const Works = () => {
                                         <Link to={`work/${post.id}`}>
                                             <img src={post.acf.work_image.url} alt={post.acf.work_image.alt} />
                                             <h3>{post.title.rendered}</h3>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><path d="M4 12h16" /><path d="M13 5l7 7-7 7" /></svg>
                                         </Link>
-                                        {/* <p className="tools-used">
-                                    <span>React</span> |
-                                    <span>Adobe XD</span> |
-                                    <span>Photoshop</span>
-                                </p> */}
+
+                                        <p className="tools-used">
+                                            {/* Loop through the tools array */}
+                                            {post.acf.tools.map((tool, index) => (
+                                                <span key={index} className='tool'>
+                                                    {tool}
+                                                </span>
+                                            ))}
+                                        </p>
                                     </article>
                                 </li>
                             )}
-                        </div>
-                        <p>You can also check out my <Link to="#">architectural work</Link>.</p>
+                        </ol>
+                        <p>You can also check out my <Link to="#">architectural works</Link>.</p>
                     </section>
                 </>
                 :
