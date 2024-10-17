@@ -7,6 +7,7 @@ import ScrollToTop from './utilities/ScrollToSection.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Home from './pages/Home'
+import Work from './pages/Work.jsx'
 
 function App() {
 
@@ -15,8 +16,12 @@ function App() {
     <>
       <BrowserRouter>
         <ScrollToTop />
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/work/:id" element={<Work />} />
+        </Routes>
       </BrowserRouter>
+
     </>
   )
 }
