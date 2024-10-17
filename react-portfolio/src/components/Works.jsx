@@ -38,15 +38,15 @@ const Works = () => {
                             {restData.map(post =>
                                 <li>
                                     <article key={post.id} className="work-item">
-                                        <Link>
+                                        <Link to={`work/${post.id}`}>
                                             <img src={post.acf.work_image.url} alt={post.acf.work_image.alt} />
                                             <h3>{post.title.rendered}</h3>
-                                            {/* <p className="tools-used">
+                                        </Link>
+                                        {/* <p className="tools-used">
                                     <span>React</span> |
                                     <span>Adobe XD</span> |
                                     <span>Photoshop</span>
                                 </p> */}
-                                        </Link>
                                     </article>
                                 </li>
                             )}
