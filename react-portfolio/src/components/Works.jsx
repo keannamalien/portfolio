@@ -33,15 +33,20 @@ const Works = () => {
                         <h2>Works</h2>
                         <div className='separator works'>
                         </div>
-                        <ol className="work-gallery">
+                        <ul className="work-gallery">
                             {/* loop through all posts */}
                             {restData.map(post =>
-                                <li>
-                                    <article key={post.id} className="work-item">
+                                <li key={post.id}>
+                                    <div className='work-number'>{post.acf.work_number}</div>
+                                    <article className="work-item">
                                         <Link to={`work/${post.id}`}>
                                             <img src={post.acf.work_image.url} alt={post.acf.work_image.alt} />
+                                            <div className='separator work-title'>
+                                            </div>
                                             <h3>{post.title.rendered}</h3>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><path d="M4 12h16" /><path d="M13 5l7 7-7 7" /></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" ><path d="M4 12h16" /><path d="M13 5l7 7-7 7" /></svg>
+                                            <div className='separator work-title'>
+                                            </div>
                                         </Link>
 
                                         <p className="tools-used">
@@ -55,7 +60,7 @@ const Works = () => {
                                     </article>
                                 </li>
                             )}
-                        </ol>
+                        </ul>
                         <p>You can also check out my <Link to="#">architectural works</Link>.</p>
                     </section>
                 </>

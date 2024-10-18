@@ -454,6 +454,11 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
 .header-title {
   padding-top: 5rem;
 }
@@ -519,13 +524,12 @@ html {
 .works-section {
   margin-top: 5rem;
 }
-.works-section h2 {
-  text-transform: uppercase;
-  font-weight: 300;
-}
 
 .work-item img {
   margin-top: 1rem;
+  width: 15rem;
+  height: 10rem;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
