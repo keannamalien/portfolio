@@ -2,14 +2,13 @@
 
     margin-top: 5rem;
 
-    h2 {
-        text-transform: uppercase;
-        font-weight: 300;
-    }
 }
 
 .work-item {
     img {
         margin-top: 1rem;
+        width: 15rem;
+        height: 10rem;
+        object-fit: cover;
     }
 }

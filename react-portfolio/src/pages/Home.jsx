@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import Works from '../components/Works'
+import About from '../components/About'
 import Footer from '../components/Footer'
 // import Loading from '../utilities/Loading'
 
@@ -11,6 +12,7 @@ const Home = () => {
         <div className='site-wrapper'>
             <Header />
             <Works />
+            <About />
             <Footer />
         </div>
     )
