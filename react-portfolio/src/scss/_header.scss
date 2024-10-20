@@ -6,11 +6,14 @@
 }
 
 .menu-button {
-    background-color: #999;
+    background-color: #242424;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: uppercase;
     border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    border-radius: 1.5625rem;
+    padding: 0.375rem 1.125rem;
     cursor: pointer;
     z-index: 1001;
     position: absolute;
@@ -22,9 +25,9 @@
     position: relative;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 20px;
-    width: 250px;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    width: 15.625rem;
     z-index: 999;
 }
 
@@ -61,8 +64,12 @@
 
 
 // header section
+.title-container {
+    height: 60vh;
+}
+
 .header-title {
-    padding-top: 5rem;
+    margin-top: 20rem;
 
     h1 {
         color: black;
@@ -94,32 +101,34 @@
 }
 
 .tagline {
-    margin-top: 2rem;
+    margin: 5rem auto 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
     // font-family: 'Raleway', sans-serif;
-    padding-bottom: 5rem;
+    // padding-bottom: 5rem;
+    gap: 1rem;
 
     .bracket {
-        font-size: 3rem;
-        font-weight: 200;
-        margin: 0 10px;
+        font-size: 4rem;
+        font-weight: 50;
+        // margin: 0 10px;
     }
 
     .tagline-text {
         text-align: center;
+        font-weight: 300;
 
         p {
             margin: 0;
         }
 
-        .line-1 {
-            font-weight: 400;
-        }
+        // .line-1 {
+        //     font-weight: 300;
+        // }
 
         .line-2 {
-            font-family: 'Monarque-SemiBoldItalic', sans-serif;
+            font-family: 'Monarque-Italic', sans-serif;
         }
     }
 }
@@ -130,6 +139,7 @@
     text-decoration: none;
     font-size: 1.3rem;
     color: black;
+    justify-content: end;
 
     svg {
         height: 30px;

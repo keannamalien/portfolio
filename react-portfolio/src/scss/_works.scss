@@ -1,14 +1,78 @@
 .works-section {
-
-    margin-top: 5rem;
-
-}
-
-.work-item {
-    img {
-        margin-top: 1rem;
-        width: 15rem;
-        height: 10rem;
-        object-fit: cover;
+    h2 {
+        margin-bottom: 0;
     }
+
+    .work-gallery {
+        list-style: none;
+        padding: 0;
+        margin-top: 3rem;
+
+        .work-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .work-number {
+            font-size: 2rem;
+            font-family: 'Monarque-Italic', sans-serif;
+            margin-top: 3rem;
+        }
+
+        img {
+            margin-top: 1rem;
+            width: 18rem;
+            height: 16rem;
+            object-fit: cover;
+        }
+
+        .separator {
+            position: absolute;
+            left: 2.3rem;
+            right: 2.3rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin: 0.3rem 0 0.1rem;
+            font-weight: 350;
+        }
+
+        svg {
+            width: 25px;
+            height: 25px;
+            margin-right: 1rem;
+        }
+
+        .tools-used {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.2rem;
+        }
+
+        .tool {
+            border: 1px solid #6c6c6c;
+            border-radius: 1.25rem;
+            padding: 0.2rem 0.3rem;
+            font-size: 0.8rem;
+            color: #6c6c6c;
+            ;
+        }
+    }
+
+    .arch-link {
+
+        display: flex;
+        align-items: center;
+        margin-top: 5rem;
+
+        svg {
+            height: 50px;
+            width: 50px;
+
+        }
+    }
+
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const HamburgerMenu = () => {
+const HeaderMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -58,4 +58,4 @@ const HamburgerMenu = () => {
     );
 };
 
-export default HamburgerMenu;
+export default HeaderMenu;
