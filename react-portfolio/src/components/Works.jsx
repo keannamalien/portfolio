@@ -43,8 +43,10 @@ const Works = () => {
                                             <img src={post.acf.work_image.url} alt={post.acf.work_image.alt} />
                                             <div className='separator work-title'>
                                             </div>
-                                            <h3>{post.title.rendered}</h3>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" ><path d="M4 12h16" /><path d="M13 5l7 7-7 7" /></svg>
+                                            <div className='work-title'>
+                                                <h3>{post.title.rendered}</h3>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" ><path d="M4 12h16" /><path d="M13 5l7 7-7 7" /></svg>
+                                            </div>
                                             <div className='separator work-title'>
                                             </div>
                                         </Link>
@@ -61,7 +63,10 @@ const Works = () => {
                                 </li>
                             )}
                         </ul>
-                        <p>You can also check out my <Link to="#">architectural works</Link>.</p>
+                        <Link className='arch-link'>
+                            <p>You can also check out my <strong>architectural works.</strong></p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" ><path d="M4 12h16" /><path d="M13 5l7 7-7 7" /></svg>
+                        </Link>
                     </section>
                 </>
                 :

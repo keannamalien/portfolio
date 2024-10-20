@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import Loading from '../utilities/Loading'
 import { restBase } from '../utilities/Utilities'
 import { Link } from 'react-router-dom'
+import HeaderMenu from './HeaderMenu'
 
 const Header = () => {
 
@@ -30,11 +31,12 @@ const Header = () => {
                 <>
                     <header id="top">
                         <nav>
-                            <ul>
+                            {/* <ul>
                                 <li><Link to="/#works">Works</Link></li>
                                 <li><Link to="/#about">About</Link></li>
                                 <li><Link to="/#contact">Contact</Link></li>
-                            </ul>
+                            </ul> */}
+                            <HeaderMenu />
                         </nav>
                         <section className='title-container'>
                             <div className='header-title'>
