@@ -5,3 +5,15 @@ body {
 .site-wrapper {
     padding: 2.3rem;
 }
+
+@media (min-width: 31.25rem) {
+    .site-wrapper {
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 56.25rem) {
+    .site-wrapper {
+        padding: 5rem;
+    }
+}

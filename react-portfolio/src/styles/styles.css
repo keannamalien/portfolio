@@ -37,6 +37,16 @@ body {
   padding: 2.3rem;
 }
 
+@media (min-width: 31.25rem) {
+  .site-wrapper {
+    padding: 3rem;
+  }
+}
+@media (min-width: 56.25rem) {
+  .site-wrapper {
+    padding: 5rem;
+  }
+}
 /* Normalize
 --------------------------------------------- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -555,6 +565,14 @@ a {
     font-size: 1.3rem;
   }
 }
+@media (min-width: 56.25rem) {
+  .header-title h1 {
+    font-size: 3rem;
+  }
+  .header-title p {
+    font-size: 2.3rem;
+  }
+}
 .separator {
   height: 1px;
   background-color: black;
@@ -564,7 +582,7 @@ a {
 }
 
 .tagline {
-  margin: 5rem auto 15rem;
+  margin: 5rem auto 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -585,6 +603,15 @@ a {
   font-family: "Monarque-Italic", sans-serif;
 }
 
+@media (min-width: 31.25rem) {
+  .tagline {
+    font-size: 1.2rem;
+    gap: 1.5rem;
+  }
+  .bracket {
+    font-size: 5.5rem;
+  }
+}
 .see-my-works {
   display: flex;
   align-items: center;
@@ -592,6 +619,7 @@ a {
   font-size: 1.3rem;
   color: black;
   justify-content: end;
+  margin-bottom: 2rem;
 }
 .see-my-works svg {
   height: 30px;
@@ -599,7 +627,7 @@ a {
 }
 
 .works-section h2 {
-  margin-bottom: 0;
+  margin: 3rem 0 0 0;
 }
 .works-section .work-gallery {
   list-style: none;
@@ -654,6 +682,20 @@ a {
   padding: 0.2rem 0.3rem;
   font-size: 0.8rem;
   color: #6c6c6c;
+}
+@media (min-width: 31.25em) {
+  .works-section .work-gallery img {
+    width: 20rem;
+  }
+}
+@media (min-width: 45.625em) {
+  .works-section .work-gallery {
+    gap: 2rem;
+  }
+  .works-section .work-gallery img {
+    width: 30rem;
+    height: 25rem;
+  }
 }
 .works-section .arch-link {
   display: flex;

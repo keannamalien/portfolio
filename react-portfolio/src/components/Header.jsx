@@ -30,14 +30,7 @@ const Header = () => {
             {isLoaded ?
                 <>
                     <header id="top">
-                        <nav>
-                            {/* <ul>
-                                <li><Link to="/#works">Works</Link></li>
-                                <li><Link to="/#about">About</Link></li>
-                                <li><Link to="/#contact">Contact</Link></li>
-                            </ul> */}
-                            <HeaderMenu />
-                        </nav>
+                        <HeaderMenu />
                         <section className='title-container'>
                             <div className='header-title'>
                                 <h1>{restData.acf.name}</h1>
