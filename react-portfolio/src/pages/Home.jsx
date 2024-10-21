@@ -9,12 +9,16 @@ import React from 'react'
 const Home = () => {
 
     return (
-        <div className='site-wrapper'>
-            <Header />
-            <Works />
-            <About />
-            <Footer />
-        </div>
+        <>
+            <div className='site-wrapper'>
+                <Header />
+                <Works />
+                <About />
+            </div>
+            <div className='footer-wrapper'>
+                <Footer />
+            </div>
+        </>
     )
 }
 

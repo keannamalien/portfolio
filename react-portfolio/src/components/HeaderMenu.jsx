@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom'
 
 const HeaderMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -38,21 +39,13 @@ const HeaderMenu = () => {
             >
                 {/* Menu items (the navigation links, resume, etc.) */}
                 <nav className="menu-links">
-                    <a href="#works" className="menu-item">👌 Works</a>
-                    <a href="#me" className="menu-item">👤 Me</a>
+                    <ul>
+                        <li><Link to="/#works">Works</Link></li>
+                        <li><Link to="/#about">About</Link></li>
+                        <li><Link to="/#contact">Contact</Link></li>
+                    </ul>
                 </nav>
 
-                <div className="social-links">
-                    <a href="https://linkedin.com" className="social-item">LinkedIn</a>
-                    <a href="mailto:youremail@example.com" className="social-item">Email</a>
-                    <a href="https://twitter.com" className="social-item">Twitter</a>
-                </div>
-
-                <div className="download-resume">
-                    <a href="/path-to-resume.pdf" download className="resume-link">
-                        ⬇️ Download Resume
-                    </a>
-                </div>
             </motion.div>
         </div>
     );
