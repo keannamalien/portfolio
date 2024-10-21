@@ -7,17 +7,27 @@
         list-style: none;
         padding: 0;
         margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        // gap: 1rem;
+        justify-content: center;
+
+        .work-item {
+            width: 100%;
+        }
 
         .work-title {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            // flex-grow: 1;
+            width: 100%;
         }
 
         .work-number {
             font-size: 2rem;
             font-family: 'Monarque-Italic', sans-serif;
-            margin-top: 3rem;
+            // margin-top: 3rem;
         }
 
         img {
@@ -27,10 +37,9 @@
             object-fit: cover;
         }
 
-        .separator {
-            position: absolute;
-            left: 2.3rem;
-            right: 2.3rem;
+        .title-line {
+            height: 1px;
+            background-color: black;
         }
 
         h3 {

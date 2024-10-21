@@ -32,19 +32,19 @@ const Footer = () => {
                             <ul>
 
                                 <li>
-                                    <div className='separator'></div>
+                                    <div className='link-line'></div>
                                     <Link >GitHub</Link>
                                 </li>
                                 <li>
-                                    <div className='separator'></div>
+                                    <div className='link-line'></div>
                                     <Link >LinkedIn</Link>
                                 </li>
 
                                 <li>
-                                    <div className='separator'></div>
+                                    <div className='link-line'></div>
                                     <Link>LinkedIn</Link>
                                 </li>
-                                <div className='separator'></div>
+                                <div className='link-line'></div>
 
                             </ul>
                         </section>
