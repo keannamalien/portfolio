@@ -103,6 +103,19 @@
     }
 }
 
+@media (min-width: 56.25rem) {
+    .header-title {
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 2.3rem;
+        }
+    }
+}
+
 .separator {
     height: 1px;
     // width: 17.6rem;
@@ -113,7 +126,7 @@
 }
 
 .tagline {
-    margin: 5rem auto 15rem;
+    margin: 5rem auto 12rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,6 +158,17 @@
     }
 }
 
+@media (min-width: 31.25rem) {
+    .tagline {
+        font-size: 1.2rem;
+        gap: 1.5rem;
+    }
+
+    .bracket {
+        font-size: 5.5rem;
+    }
+}
+
 .see-my-works {
     display: flex;
     align-items: center;
@@ -152,6 +176,7 @@
     font-size: 1.3rem;
     color: black;
     justify-content: end;
+    margin-bottom: 2rem;
 
     svg {
         height: 30px;

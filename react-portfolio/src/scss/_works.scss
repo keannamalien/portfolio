@@ -1,6 +1,6 @@
 .works-section {
     h2 {
-        margin-bottom: 0;
+        margin: 3rem 0 0 0;
     }
 
     .work-gallery {
@@ -69,6 +69,30 @@
             color: #6c6c6c;
             ;
         }
+    }
+
+    @media (min-width: 31.25em) {
+
+        .work-gallery {
+            img {
+                width: 20rem;
+                // height: 20rem;
+            }
+        }
+
+    }
+
+    @media (min-width: 45.625em) {
+
+        .work-gallery {
+            gap: 2rem;
+
+            img {
+                width: 30rem;
+                height: 25rem;
+            }
+        }
+
     }
 
     .arch-link {
