@@ -39,7 +39,7 @@ const Works = () => {
                                 <li key={post.id}>
                                     <div className='work-number'>{post.acf.work_number}</div>
                                     <article className="work-item">
-                                        <Link to={`work/${post.id}`}>
+                                        <Link to={`work/${post.slug}`}>
                                             <img src={post.acf.work_image.url} alt={post.acf.work_image.alt} />
                                             <div className='title-line'>
                                             </div>

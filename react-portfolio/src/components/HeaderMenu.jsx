@@ -25,21 +25,19 @@ const HeaderMenu = () => {
 
     return (
         <div className="menu-container">
-            {/* Menu button fixed in the bottom right */}
             <button className="menu-button" onClick={toggleMenu}>
                 {isOpen ? 'Close' : 'Menu'}
             </button>
 
-            {/* Animated Menu */}
             <motion.div
                 className="menu-content"
                 initial={false}
                 animate={isOpen ? "open" : "closed"}
                 variants={menuVariants}
             >
-                {/* Menu items (the navigation links, resume, etc.) */}
                 <nav className="menu-links">
                     <ul>
+                        <li><Link to="/">Home</Link></li>
                         <li><Link to="/#works">Works</Link></li>
                         <li><Link to="/#about">About</Link></li>
                         <li><Link to="/#contact">Contact</Link></li>
