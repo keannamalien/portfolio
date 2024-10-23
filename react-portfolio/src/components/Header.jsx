@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import Loading from '../utilities/Loading'
 import { restBase } from '../utilities/Utilities'
 import { Link } from 'react-router-dom'
-import HeaderMenu from './HeaderMenu'
+// import HeaderMenu from './HeaderMenu'
 
 const Header = () => {
 
@@ -30,7 +30,7 @@ const Header = () => {
             {isLoaded ?
                 <>
                     <header id="top">
-                        <HeaderMenu />
+                        {/* <HeaderMenu /> */}
                         <section className='title-container'>
                             <div className='header-title'>
                                 <h1>{restData.acf.name}</h1>
@@ -47,7 +47,7 @@ const Header = () => {
                                 <span className='bracket'>{'}'}</span>
                             </div>
 
-                            <Link to='#' className='see-my-works'>
+                            <Link to='/#works' className='see-my-works'>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M6 18L18 6" /><path d="M6 8v10h10" /></svg>
                                 <span className='see-my-works-text'>{restData.acf.see_my_works}</span>
                             </Link>

@@ -2,12 +2,16 @@ body {
     background-color: #F1F1F1;
 }
 
-.site-wrapper {
+.site-wrapper,
+.work-wrapper {
     padding: 2.3rem;
 }
 
+
 @media (min-width: 31.25rem) {
-    .site-wrapper {
+
+    .site-wrapper,
+    .work-wrapper {
         padding: 3rem;
     }
 }

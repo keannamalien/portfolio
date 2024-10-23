@@ -33,12 +33,14 @@ body {
   background-color: #F1F1F1;
 }
 
-.site-wrapper {
+.site-wrapper,
+.work-wrapper {
   padding: 2.3rem;
 }
 
 @media (min-width: 31.25rem) {
-  .site-wrapper {
+  .site-wrapper,
+  .work-wrapper {
     padding: 3rem;
   }
 }
@@ -693,8 +695,7 @@ a {
     gap: 2rem;
   }
   .works-section .work-gallery img {
-    width: 30rem;
-    height: 25rem;
+    height: 20rem;
   }
 }
 .works-section .arch-link {
