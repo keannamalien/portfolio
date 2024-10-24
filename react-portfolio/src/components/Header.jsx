@@ -27,7 +27,7 @@ const Header = () => {
 
     return (
         <>
-            {isLoaded ?
+            {isLoaded &&
                 <>
                     <header id="top">
                         {/* <HeaderMenu /> */}
@@ -54,8 +54,6 @@ const Header = () => {
                         </section>
                     </header>
                 </>
-                :
-                <Loading />
             }
         </>
     )

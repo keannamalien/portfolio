@@ -9,7 +9,7 @@ import HeaderMenu from './components/HeaderMenu.jsx'
 
 import Home from './pages/Home'
 import Work from './pages/Work.jsx'
-import Footer from './components/Footer.jsx'
+// import Footer from './components/Footer.jsx'
 
 function App() {
 
@@ -23,7 +23,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/work/:slug" element={<Work />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
 
     </>

@@ -28,6 +28,7 @@ const Home = () => {
                         <Works />
                         <About />
                     </main>
+                    <Footer />
                 </>
                 :
                 <Loading />

@@ -34,7 +34,7 @@ function Work() {
 
     return (
         <>
-            {isLoaded ?
+            {isLoaded &&
                 <>
                     <main className='work-wrapper'>
                         <div className='work-overview'>
@@ -90,8 +90,6 @@ function Work() {
 
                     </main>
                 </>
-                :
-                <Loading />
             }
         </>
     )
