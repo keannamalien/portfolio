@@ -27,7 +27,7 @@ const Works = () => {
 
     return (
         <>
-            {isLoaded ?
+            {isLoaded &&
                 <>
                     <section id="works" className='works-section'>
                         <h2>Works</h2>
@@ -69,8 +69,6 @@ const Works = () => {
                         </Link>
                     </section>
                 </>
-                :
-                <Loading />
             }
         </>
     )

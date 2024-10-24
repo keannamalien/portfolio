@@ -73,7 +73,7 @@ const About = () => {
 
     return (
         <>
-            {isLoaded ?
+            {isLoaded &&
                 <>
                     <section id="about" className='about-section'>
                         <h2>About</h2>
@@ -105,8 +105,6 @@ const About = () => {
                         </div>
                     </section>
                 </>
-                :
-                <Loading />
             }
         </>
     )

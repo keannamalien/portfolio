@@ -24,7 +24,7 @@ const Footer = () => {
     }, [restPath])
     return (
         <>
-            {isLoaded ?
+            {isLoaded &&
                 <>
                     <footer>
                         <section id="contact" className='contact-section'>
@@ -50,8 +50,6 @@ const Footer = () => {
                         </section>
                     </footer>
                 </>
-                :
-                <Loading />
             }
         </>
     )
