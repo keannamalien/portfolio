@@ -38,6 +38,10 @@ const Header = () => {
                             </div>
                             <div className='separator'>
                             </div>
+                            <Link to="/#works" className="see-my-works">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M6 18L18 6" /><path d="M6 8v10h10" /></svg>
+                                <span className='see-my-works-text'>{restData.acf.see_my_works}</span>
+                            </Link>
                             <div className='tagline'>
                                 <span className='bracket'>{'{'}</span>
                                 <div className='tagline-text'>
@@ -47,10 +51,6 @@ const Header = () => {
                                 <span className='bracket'>{'}'}</span>
                             </div>
 
-                            <Link to='/#works' className='see-my-works'>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M6 18L18 6" /><path d="M6 8v10h10" /></svg>
-                                <span className='see-my-works-text'>{restData.acf.see_my_works}</span>
-                            </Link>
                         </section>
                     </header>
                 </>
