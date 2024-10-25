@@ -28,24 +28,30 @@ const Footer = () => {
                 <>
                     <footer>
                         <section id="contact" className='contact-section'>
-                            <h2>Where You Can Find Me</h2>
-                            <ul>
-
-                                <li>
+                            <h2 className='contact-title'>Where you can find me</h2>
+                            <ul className='contact-list'>
+                                <li className='contact-item'>
                                     <div className='link-line'></div>
-                                    <Link >GitHub</Link>
+                                    <Link to='https://github.com/keannamalien'>
+                                        GITHUB
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="ai ai-ArrowUpRight" ><path d="M18 6L6 18" /><path d="M8 6h10v10" /></svg>
+                                    </Link>
                                 </li>
-                                <li>
+                                <li className='contact-item'>
                                     <div className='link-line'></div>
-                                    <Link >LinkedIn</Link>
+                                    <Link to='https://www.linkedin.com/in/keannabayaua/'>
+                                        LINKEDIN
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="ai ai-ArrowUpRight" ><path d="M18 6L6 18" /><path d="M8 6h10v10" /></svg>
+                                    </Link>
                                 </li>
-
-                                <li>
+                                <li className='contact-item'>
                                     <div className='link-line'></div>
-                                    <Link>LinkedIn</Link>
+                                    <a href='mailto:keannamalien@gmail.com'>
+                                        EMAIL
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="ai ai-ArrowUpRight" ><path d="M18 6L6 18" /><path d="M8 6h10v10" /></svg>
+                                    </a>
+                                    <div className='link-line'></div>
                                 </li>
-                                <div className='link-line'></div>
-
                             </ul>
                         </section>
                     </footer>
