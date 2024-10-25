@@ -76,7 +76,7 @@ const About = () => {
             {isLoaded &&
                 <>
                     <section id="about" className='about-section'>
-                        <h2>About</h2>
+                        <h2>About Me</h2>
                         {/* <div className='separator about'>
                         </div> */}
                         <div className='about-text'>

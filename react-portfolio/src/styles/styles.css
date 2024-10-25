@@ -743,12 +743,13 @@ a {
     rotate: -90deg;
     text-align: right;
     height: 10rem;
+    width: fit-content;
   }
   .works-section .section-title h2 {
     font-size: 2rem;
   }
   .works-section .section-title .separator.works {
-    left: 0;
+    left: -30rem;
   }
   .works-section .work-gallery {
     gap: 2rem;
@@ -774,43 +775,68 @@ a {
 @media (min-width: 43.75rem) {
   .about-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
     margin-top: 5rem;
   }
   .about-section h2 {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 1rem;
   }
   .about-section .accordion {
     grid-column: 2/3;
+    width: 70%;
   }
 }
 footer {
   background-color: #929173;
-  padding: 20px 0;
-  color: #fff;
-  padding: 10rem 2.3rem;
+  padding: 50px 20px;
 }
-footer .contact-section h2,
-footer .contact-section ul {
-  padding: 2.3rem;
+footer .contact-title {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.1rem;
 }
-footer .contact-section ul {
+footer .contact-list {
   list-style: none;
+  padding: 0;
+}
+footer .contact-item {
+  gap: 0.5rem;
+}
+footer .link-line {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 200;
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  letter-spacing: 0.05rem;
+  transition: letter-spacing 0.3s ease;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
 }
-footer .contact-section li {
-  margin: 1rem 0;
+footer .arrow {
+  margin-left: 2rem;
 }
-footer .contact-section a {
-  color: #fff;
-}
-footer .contact-section .link-line {
-  height: 0.5px;
-  background-color: #fff;
+
+@media (min-width: 31.25em) {
+  footer {
+    padding: 8rem;
+    height: 100vh;
+  }
+  footer .contact-list {
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

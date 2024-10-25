@@ -7,17 +7,20 @@
 @media (min-width: 43.75rem) {
     .about-section {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
         margin-top: 5rem;
+        // padding: 0 6rem;
 
         h2 {
             font-weight: 600;
-            font-size: 3rem;
+            font-size: 2rem;
             margin-top: 1rem;
         }
 
         .accordion {
             grid-column: 2/3;
+            width: 70%;
         }
     }
 
