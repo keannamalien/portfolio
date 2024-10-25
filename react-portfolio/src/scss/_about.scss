@@ -3,3 +3,23 @@
         margin-bottom: 0;
     }
 }
+
+@media (min-width: 43.75rem) {
+    .about-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5rem;
+
+        h2 {
+            font-weight: 600;
+            font-size: 3rem;
+            margin-top: 1rem;
+        }
+
+        .accordion {
+            grid-column: 2/3;
+        }
+    }
+
+
+}

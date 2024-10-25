@@ -30,8 +30,10 @@ const Works = () => {
             {isLoaded &&
                 <>
                     <section id="works" className='works-section'>
-                        <h2>Works</h2>
-                        <div className='separator works'>
+                        <div className='section-title'>
+                            <h2>Works</h2>
+                            <div className='separator works'>
+                            </div>
                         </div>
                         <ul className="work-gallery">
                             {/* loop through all posts */}

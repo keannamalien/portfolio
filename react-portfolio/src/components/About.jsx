@@ -77,10 +77,12 @@ const About = () => {
                 <>
                     <section id="about" className='about-section'>
                         <h2>About</h2>
-                        <div className='separator about'>
+                        {/* <div className='separator about'>
+                        </div> */}
+                        <div className='about-text'>
+                            <h3>{restData.acf.about_heading}</h3>
+                            <p>{restData.acf.about_paragraph[0].about_text}<strong className='bold'>{restData.acf.about_paragraph[1].about_text}</strong></p>
                         </div>
-                        <h3>{restData.acf.about_heading}</h3>
-                        <p>{restData.acf.about_paragraph[0].about_text}<strong className='bold'>{restData.acf.about_paragraph[1].about_text}</strong></p>
 
                         <div className="accordion">
                             <AccordionItem
