@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import Loading from '../utilities/Loading'
 import { restBase } from '../utilities/Utilities'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion';
@@ -31,16 +30,15 @@ const About = () => {
     };
 
     const AccordionItem = ({ title, content, index, skillType }) => {
-        const isOpen = openIndex === index; // Determine if this accordion should be open
+        const isOpen = openIndex === index;
         return (
             <div className="accordion-item">
                 <div
                     className="accordion-header"
                     onClick={() => toggleAccordion(index)}
-                    style={{ cursor: 'pointer', padding: '10px', display: 'flex', justifyContent: 'space-between' }}
                 >
                     <h3>{title}</h3>
-                    <span>{isOpen ? '-' : '+'}</span>
+                    <span className='accordion-toggle'>{isOpen ? '-' : '+'}</span>
                 </div>
 
                 <motion.div
@@ -52,11 +50,10 @@ const About = () => {
                         ease: [0.25, 0.46, 0.45, 0.94],
                     }}
 
-                    style={{ overflow: 'hidden' }}
                 >
 
                     {Array.isArray(content) ? (
-                        <ul style={{ padding: '10px', listStyleType: 'disc' }}>
+                        <ul>
                             {content.map((item, index) => (
                                 <li key={index}>
                                     {item[skillType]}
@@ -77,8 +74,6 @@ const About = () => {
                 <>
                     <section id="about" className='about-section'>
                         <h2>About Me</h2>
-                        {/* <div className='separator about'>
-                        </div> */}
                         <div className='about-text'>
                             <h3>{restData.acf.about_heading}</h3>
                             <p>{restData.acf.about_paragraph[0].about_text}<strong className='bold'>{restData.acf.about_paragraph[1].about_text}</strong></p>

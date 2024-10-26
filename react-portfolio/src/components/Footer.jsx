@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import Loading from '../utilities/Loading'
 import { restBase } from '../utilities/Utilities'
 import { Link } from 'react-router-dom'
 
