@@ -823,12 +823,12 @@ a {
     width: 20rem;
     height: 20rem;
   }
-  .works-section .work-title:hover h3 {
+  .works-section .work-item:hover h3 {
     color: #929173;
     letter-spacing: 0.05rem;
     transition: 0.3s;
   }
-  .works-section .work-title:hover svg {
+  .works-section .work-item:hover svg {
     stroke: #929173;
   }
   .works-section .arch-link {
