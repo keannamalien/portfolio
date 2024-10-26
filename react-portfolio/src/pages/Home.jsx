@@ -23,7 +23,7 @@ const Home = () => {
         <>
             {isLoaded ?
                 <>
-                    <main className='site-wrapper'>
+                    <main className='site-wrapper' id='site-main'>
                         <Header />
                         <Works />
                         <About />

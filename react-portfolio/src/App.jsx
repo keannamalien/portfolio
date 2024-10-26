@@ -18,6 +18,7 @@ function App() {
     <>
       <BrowserRouter>
         <ScrollToTop />
+        <a href="#site-main" class="screen-reader-text">skip to content</a>
         <HeaderMenu />
         <Routes>
           <Route path="/" element={<Home />} />

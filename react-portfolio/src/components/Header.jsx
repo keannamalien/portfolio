@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import Loading from '../utilities/Loading'
 import { restBase } from '../utilities/Utilities'
 import { Link } from 'react-router-dom'
 // import HeaderMenu from './HeaderMenu'
@@ -30,7 +29,7 @@ const Header = () => {
             {isLoaded &&
                 <>
                     <header id="top">
-                        {/* <HeaderMenu /> */}
+                        <Link to="#" className='logo'>kb.</Link>
                         <section className='title-container'>
                             <div className='header-title'>
                                 <h1>{restData.acf.name}</h1>

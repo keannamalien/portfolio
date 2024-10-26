@@ -36,30 +36,35 @@ function Work() {
         <>
             {isLoaded &&
                 <>
-                    <main className='work-wrapper'>
+                    <main className='work-wrapper' id="site-main">
                         <div className='work-overview'>
+                            <div className='work-hero'>
+                                <video className='video-hero' autoPlay muted>
+                                    <source src={restData[0].acf.work_hero_image.url} alt={restData[0].acf.work_hero_image.alt} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                             <h1>{restData[0].title.rendered}</h1>
                             <p>{restData[0].acf.project_overview}</p>
-                        </div>
-                        <ul className='work-tools'>
-                            {restData[0].acf.tools.map((tool, index) => (
-                                <li key={index} className='work-tool'>
-                                    {tool}
-                                </li>
-                            ))}
-                        </ul>
-                        <div className='work-hero'>
-                            <img src={restData[0].acf.work_hero_image.url} alt={restData[0].acf.work_hero_image.alt} />
+                            <ul className='work-tools'>
+                                {restData[0].acf.tools.map((tool, index) => (
+                                    <li key={index} className='work-tool'>
+                                        {tool}
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                         <section className='features'>
                             {restData[0]?.acf?.features && Array.isArray(restData[0].acf.features) && restData[0].acf.features.length > 0 ? (
                                 restData[0].acf.features.map((feature, index) => (
                                     <div key={index} className='feature-item'>
-                                        {/* Feature Title */}
-                                        <h3 className='feature-title'>{feature.feature_title}</h3>
+                                        <div className='feature-text'>
+                                            {/* Feature Title */}
+                                            <h2 className='feature-title'>{feature.feature_title}</h2>
 
-                                        {/* Feature Description */}
-                                        <p className='feature-description'>{feature.feature_description}</p>
+                                            {/* Feature Description */}
+                                            <p className='feature-description'>{feature.feature_description}</p>
+                                        </div>
 
                                         {/* Feature Images  */}
                                         {Array.isArray(feature.feature_images) && feature.feature_images.length > 0 &&
@@ -73,7 +78,7 @@ function Work() {
                                                             <div key={imgIndex} className='feature-image'>
                                                                 <img
                                                                     src={imageObj.feature_image.url}
-                                                                    alt={imageObj.feature_image.alt || 'Feature Image'}
+                                                                    alt={imageObj.feature_image.alt}
                                                                 />
                                                             </div>
                                                         ))}
@@ -83,11 +88,13 @@ function Work() {
                                     </div>
                                 ))
                             ) : (
-                                <p>Ongoing project, check back later to see the final product.</p>
+                                <p>Loading...</p>
                             )}
+                            <div className='takeaway'>
+                                <h2>{restData[0].acf.takeaway}</h2>
+                                <p>{restData[0].acf.takeaway_text}</p>
+                            </div>
                         </section>
-
-
                     </main>
                 </>
             }
